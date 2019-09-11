@@ -135,7 +135,7 @@ As the Page community grows, it becomes more important to enable the intimate pe
 
 }
 .text > button {
-  background: gray;
+  background-color: #4E58A3;
   border: 0;
   color: white;
   padding: 20px;
@@ -144,6 +144,11 @@ As the Page community grows, it becomes more important to enable the intimate pe
   button { 
 text-transform: uppercase;
    }
+
+   h3, a { 
+color: #4E58A3;
+    }
+
 </style>
 
 
@@ -155,7 +160,9 @@ text-transform: uppercase;
 
 <div class="grid">
   <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
+        <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/AC 2019.jpg" width="100%">
+          </div>
     <div class="text">
       <h3>2019 Page Annual Conference</h3>
       <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
@@ -163,7 +170,9 @@ text-transform: uppercase;
     </div>
   </article>
   <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/chicago.jpg" width="100%">
+          </div>
     <div class="text">
       <h3>Chicago Networking Reception</h3>
       <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
@@ -171,48 +180,58 @@ text-transform: uppercase;
     </div>
   </article>
   <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
-    <div class="text">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/dallas.jpg" width="100%">
+          </div>    <div class="text">
       <h3>Dallas Networking Breakfast</h3>
       <p>Completely synergize resource taxing relationships via premier niche markets.</p>
       <button>View Info</button>
     </div>
   </article>
   <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
-    <div class="text">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/webinar.jpg" width="100%">
+          </div>    <div class="text">    <div class="text">
       <h3>Webinar: Countering Disinformation with Bob</h3>
       <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
       <button>View Info</button>
     </div>
   </article>
   <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
-    <div class="text">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/denver.jpg" width="100%">
+          </div>
+              <div class="text">
       <h3>Denver Networking Reception</h3>
       <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
       <button>View Info</button>
     </div>
   </article>
   <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
-    <div class="text">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/webinar.jpg" width="100%">
+          </div>
+              <div class="text">
       <h3>Minneapolis Networking Reception</h3>
       <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
       <button>View Info</button>
     </div>
   </article>
     <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
-    <div class="text">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/amsterdam.jpg" width="100%">
+          </div>
+              <div class="text">
       <h3>Amsterdam Insight Forum</h3>
       <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
       <button>View Info</button>
     </div>
   </article>
     <article>
-            <img src="https://via.placeholder.com/250x150.png?text=PageConnect Demo Image" width="100%">
-    <div class="text">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+            <img src="engage/img/Spring Seminar.jpg" width="100%">
+          </div>
+              <div class="text">
       <h3>2020 Page Spring Seminar</h3>
       <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
       <button>View Info</button>
@@ -346,10 +365,7 @@ html {
 }
 </style>
 </head>
-<body>
-
-<h2>Responsive "Meet The Team" Section</h2>
-<p>Resize the browser window to see the effect.</p>
+<!--<body>
 <br>
 
 <div class="row">
@@ -390,4 +406,192 @@ html {
       </div>
     </div>
   </div>
+</div>-->
+
+
+
+
+<style>
+.team-cards { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  margin-top: 4em;
+  }
+.team-cards > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.team-cards > article img {
+  max-width: 100%;
+  width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+    text-align: center;
+
+}
+
+.img-contain { 
+overflow: hidden;
+ }
+
+@media screen and (max-width: 650px) {
+  .img-contain {
+    width: 100%;
+    max-height: 600px;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+
+article > img {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+article > img:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+</style>
+
+
+
+</tbody></table>
+<div class="team-cards">
+  <article>
+            <img src="engage/img/DP_cropped.jpg" width="100%">
+    <div class="text">
+      <h3>Aishik Barua</h3>
+      <p>Manager, Marketing, Communications & Digital Engagement</p> <p><a href="mailto:abarua@awpagesociety.com">abarua@awpagesociety.com </a><br> (212) 400-7959 x110</p>
+    </div>
+  </article>
+
+      <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Anne Matthews</h3>
+      <p>Executive Assistant</p> <p><a href="mailto:amatthews@awpagesociety.com">amatthews@awpagesociety.com </a><br> (212) 400-7959 x103</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="engage/img/Roger Bolton.jpg" width="100%">
+    <div class="text">
+      <h3>Roger Bolton</h3>
+      <p>President</p> <p><a href="mailto:rbolton@awpagesociety.com">rbolton@awpagesociety.com </a><br> (212) 400-7959 x101</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Eliot Mizrachi</h3>
+      <p>VP, Communications & Thought Leadership</p> <p><a href="mailto:emizrachi@awpagesociety.com">emizrachi@awpagesociety.com </a><br> (212) 400-7959 x106</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Dhaakira Baswell</h3>
+      <p>Event Planner - Professional Development</p> <p><a href="mailto:dbraswell@awpagesociety.com">dbraswell@awpagesociety.com </a><br> (212) 400-7959 x115</p>
+    </div>
+  </article>
+
+
+  <article>
+            <img src="engage/img/april.jpg" width="100%">
+    <div class="text">
+      <h3>April Murphy</h3>
+      <p>Director, Page Up Member Engagement and Future Leaders Experience</p> <p><a href="mailto:amurphy@awpagesociety.com">amurphy@awpagesociety.com </a><br> (212) 400-7959 x112</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Peter Debreceny</h3>
+      <p>Global VP</p> <p><a href="mailto:peter@peterdebreceny.com">peter@peterdebreceny.com </a><br> (312) 391-7959 x5927</p>
+    </div>
+  </article>
+
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Justin Pallenik</h3>
+      <p>Thought Leadership Manager</p> <p><a href="mailto:jpallenik@awpagesociety.com">jpallenik@awpagesociety.com </a><br> (212) 400-7959 x119</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Mary Elliot</h3>
+      <p>VP, Member Engagement</p> <p><a href="mailto:melliott@awpagesociety.com">melliot@awpagesociety.com </a><br> (770) 982-4138</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Shahil Shrestha</h3>
+      <p>Database Analyst & Membership Services Associate</p> <p><a href="mailto:sshrestha@awpagesociety.com">sshrestha@awpagesociety.com </a><br> (212) 400-7959 x117</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Marianna Frantzis</h3>
+      <p>Membership Manager</p> <p><a href="mailto:mfrantzis@awpagesociety.com">mfrantzis@awpagesociety.com </a><br> (212) 400-7959 x107</p>
+    </div>
+  </article>
+ 
+
+  <article>
+            <img src="engage/img/dan.jpg" width="100%">
+    <div class="text">
+      <h3>Dan Strouhal</h3>
+      <p>VP, Professional Development & COO</p> <p><a href="mailto:dstrouhal@awpagesociety.com">dstrouhal@awpagesociety.com </a><br> (212) 400-7959 x102</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Kelly Greene</h3>
+      <p>Chief of Staff</p> <p><a href="mailto:kgreene@awpagesociety.com">kgreene@awpagesociety.com </a><br> (212) 400-7959 x118</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="engage/img/anabella.jpg" width="100%">
+    <div class="text">
+      <h3>Anabella Tinoco</h3>
+      <p>Director, Communications & Digital Engagement</p> <p><a href="mailto:atinoco@awpagesociety.com">atinoco@awpagesociety.com </a><br> (212) 400-7959 x116</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="https://via.placeholder.com/150x150.png?text=PageConnect Demo Image" width="100%">
+    <div class="text">
+      <h3>Lauren Kramon, CMP</h3>
+      <p>Senior Event Manager, Member Engagement</p> <p><a href="mailto:lkramon@awpagesociety.com">lkramon@awpagesociety.com </a><br> (201) 892-7862</p>
+    </div>
+  </article>
+
+  <article>
+            <img src="engage/img/Errick Headshot.jpg" width="100%">
+    <div class="text">
+      <h3>Errick Towns</h3>
+      <p>Manager, Development & Member Engagement</p> <p><a href="mailto:etowns@awpagesociety.com">etowns@awpagesociety.com </a><br> (212) 400-7959 x105</p>
+    </div>
+  </article>
 </div>

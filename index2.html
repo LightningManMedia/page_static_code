@@ -1,0 +1,83 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+color: white;
+}
+p { 
+ color: white;
+ }
+h1 { 
+display: none;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  height: auto;
+  color: white;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  min-height: 300px;
+  height: fit-content;
+    background-color: #fbb766;
+}
+.grow { 
+        transition: all .2s ease-in-out;
+ }
+ .grow:hover { 
+            transform: scale(1.1);
+  }
+  .button:hover { 
+    border: 2px solid white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+   }
+</style>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p style="color: white;">Find and connect with fellow members in our directory</p>
+       <img src="https://knowledge.page.org/wp-content/uploads/2019/09/connect-icon-01.svg" width="150" height="150" class="grow">
+                   <div class="cta-btn text-center"><a href="https://page.org/members/" class="button" style="background-color: white; text-transform: uppercase; border-radius: 30px; width: 100%; text-decoration: none; color: white; padding: 15px; font-weight: bold; white-space: nowrap; color: #fbb766;">Connect</a></div>  
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <p style="color: white;">Join member groups to discuss topical or industry issues</p>
+       <img src="https://knowledge.page.org/wp-content/uploads/2019/09/discuss-icon-01.svg" width="150" height="150" class="grow">
+                   <div class="cta-btn text-center"><a href="https://page.org/site/pageconnect-groups/" class="button" style="background-color: white; text-transform: uppercase; border-radius: 30px; width: 100%; text-decoration: none; color: white; padding: 15px; font-weight: bold; white-space: nowrap; color: #fbb766;">Discuss</a></div> 
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p style="color: white;">Discover ways to engage with Page</p>
+      <br> 
+       <img src="https://knowledge.page.org/wp-content/uploads/2019/09/engage-icon-01.svg" width="150" height="150" class="grow">
+                         <div class="cta-btn text-center"><a href="https://page.org/site/member-engagement/" class="button" style="background-color: white; text-transform: uppercase; border-radius: 30px; width: 100%; text-decoration: none; color: white; padding: 15px; font-weight: bold; color: #fbb766; white-space: nowrap;margin-bottom: 10px;">Engage</a></div> 
+    </div>
+  </div></div>
+<div><br></div>

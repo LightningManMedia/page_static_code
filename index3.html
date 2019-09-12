@@ -1,3 +1,6 @@
+<head> 
+  <script src="https://kit.fontawesome.com/d4bb5fb81c.js"></script>
+</head>
 <style> h1 { display: none; } h2, h1 { line-height: normal !important;} p { line-height: normal !important; }</style>
 <table class="main-wrapping-table" style="
   transform-origin: top left; text-align: center; line-height: normal;">
@@ -135,7 +138,7 @@ Thanks so much for being part of the Page community.</p>
 
 }
 .text > button {
-  background-color: #4E58A3;
+  background-color: #fbb766;
   border: 0;
   color: white;
   padding: 20px;
@@ -153,16 +156,43 @@ color: #4E58A3;
 
   transform-origin: 50% 50%;
   transition: transform 0.3s, filter 0.8s ease-in-out;
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
 
 /* The Transformation */
     article > .img-contain > img:hover { 
-  filter: brightness(100%);
+  filter: brightness(80%);
   transform: scale(1.1);
 
      }
 
+     .calendar-corner { 
+      background-color: #fbb766;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     }
+
+     .calendar-corner > .day { 
+       color: white;
+       text-align: center;
+       font-size: 22px;
+       margin: auto;
+       padding-top: 15px;
+     }
+     .calendar-corner > .month { 
+       color: #fbb766;
+       text-align: center;
+       background-color: white;
+       vertical-align: top;
+       margin: auto;
+     }
+.img-contain { 
+  position: relative;
+}
 </style>
 
 
@@ -176,79 +206,89 @@ color: #4E58A3;
   <article>
         <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/AC 2019.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">September</p><p class="day">15-17</p></div>
           </div>
     <div class="text">
       <h3>2019 Page Annual Conference</h3>
-      <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
-      <button>View Info</button>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Boston</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">12:00 p.m. - 1:30 p.m.</p>      <button>View Info</button>
     </div>
   </article>
   <article>
-    <div class="img-contain" style="max-height: 300px; overflow: hidden;">
+    <div class="img-contain" style="max-height: 300px; overflow: hidden; position: relative;">
             <img src="engage/img/chicago.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">September</p><p class="day">24</p></div>
           </div>
     <div class="text">
       <h3>Chicago Networking Reception</h3>
-      <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Chicago</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">5:30 p.m. - 7:30 p.m.</p>
       <button>View Info</button>
     </div>
   </article>
   <article>
     <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/dallas.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">October</p><p class="day">3</p></div>
+   
           </div>    <div class="text">
       <h3>Dallas Networking Breakfast</h3>
-      <p>Completely synergize resource taxing relationships via premier niche markets.</p>
-      <button>View Info</button>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Dallas</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">8:00 a.m. - 10:00 a.m.</p>      <button>View Info</button>
     </div>
   </article>
   <article>
     <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/webinar.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">October</p><p class="day">14</p></div>
           </div>    <div class="text">    <div class="text">
       <h3>Webinar: Countering Disinformation with Bob</h3>
-      <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+      <i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">1:30 p.m. - 2:30 p.m.</p> <br>    
       <button>View Info</button>
     </div>
   </article>
   <article>
     <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/denver.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">October</p><p class="day">29</p></div>
           </div>
               <div class="text">
       <h3>Denver Networking Reception</h3>
-      <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
-      <button>View Info</button>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Lakewood</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">5:30 p.m. - 7:30 p.m.</p>       <button>View Info</button>
     </div>
   </article>
   <article>
     <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/webinar.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">November</p><p class="day">7</p></div>
           </div>
               <div class="text">
       <h3>Minneapolis Networking Reception</h3>
-      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-      <button>View Info</button>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Minneapolis</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">5:00 p.m. - 7:00 p.m.</p>       <button>View Info</button>
     </div>
   </article>
     <article>
     <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/amsterdam.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">November</p><p class="day">12</p></div>
           </div>
               <div class="text">
       <h3>Amsterdam Insight Forum</h3>
-      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-      <button>View Info</button>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Amsterdam</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">2:30 p.m. - 10:00 p.m.</p>       <button>View Info</button>
     </div>
   </article>
     <article>
     <div class="img-contain" style="max-height: 300px; overflow: hidden;">
             <img src="engage/img/Spring Seminar.jpg" width="100%">
+            <div class="calendar-corner"><p class="month">April</p><p class="day">2-3</p></div>
           </div>
               <div class="text">
       <h3>2020 Page Spring Seminar</h3>
-      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-      <button>View Info</button>
+      <i class="fas fa-map-marker-alt" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">  Brooklyn</p>
+      <br><i class="far fa-clock" style="color:#FBB766; display: inline-block; padding-right: 10px;"></i><p style="display: inline-block;">7:00 a.m. - 1:30 p.m.</p>       <button>View Info</button>
     </div>
   </article>
 </div>
